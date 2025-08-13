@@ -1,28 +1,20 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, { useEffect } from 'react';
+import { Text, View } from 'react-native';
+import firebase from '@react-native-firebase/app';
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
-
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
+export default function App() {
+  useEffect(() => {
+    console.log('Firebase apps:', firebase.apps);
+    if (firebase.apps.length) {
+      console.log('✅ Firebase está inicializado');
+    } else {
+      console.log('❌ Firebase NO está inicializado');
+    }
+  }, []);
 
   return (
-    <View style={styles.container}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <NewAppScreen templateFileName="App.tsx" />
+    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text>🚀 Lookation App funcionando!</Text>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
-
-export default App;

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "677584857229",
+    "project_id": "lookation-c51ed",
+    "storage_bucket": "lookation-c51ed.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677584857229:android:9652cbe561ac3e170a5ac4",
+        "android_client_info": {
+          "package_name": "com.lookationapp1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlqTyMPD6LgQddAgCVqBeLLDC3UqAl-pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
